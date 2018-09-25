@@ -38,6 +38,30 @@ a {
   text-decoration: none;
 }
 
+img {
+  justify-content: center;
+}
+
+th {
+  color: green;
+  border: 2px solid black;
+}
+
+td {
+  border: 2px solid black;
+  /* border-collapse: collapse; */
+}
+
+tr {
+  border: 2px solid black;
+  /* border-collapse: collapse; */
+}
+
+#OrderTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .yield-info {
   background-color: white;
   opacity: 0.8;
@@ -45,6 +69,7 @@ a {
   margin: 20px 10px;
   border-bottom: 2px, solid;
   border: 1px solid red;
+
 }
 .header {
   background-color: white;

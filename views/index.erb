@@ -1,8 +1,25 @@
-<h2>All the pizza orders</h2>
+<h2>All Active Pizza Orders:</h2>
 <%#comment%>
 
-<% for order in @orders %> <!-- ice cream cone allows you to write ruby code in erb file -->
-  <p>Name: <%= order.pretty_name() %>  <!-- ice crean cone with flake for specific fields you want to print out-->
-  <p>Order: <%=order.quantity()%> <%=order.topping()%> pizza(s)</p>
-  <p><a href="/pizza_orders/<%= order.id %>">Show Order</a></p>
-<% end %>
+<table id="OrderTable">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Second Name</th>
+      <th>Topping</th>
+      <th>Quantity</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for order in @orders%>
+      <tr>
+        <td><%=order.first_name%></td>
+        <td><%=order.last_name%></td>
+        <td><%=order.topping%></td>
+        <td><%=order.quantity.to_i%></td>
+        <td><a href="/pizza_orders/<%= order.id %>">Amend/Cancel</a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
