@@ -1,0 +1,53 @@
+body {
+  background-image: url("https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  background-size: cover;
+  color: red;
+}
+
+h2 {
+  color: green;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.5;
+}
+
+h1, nav, ul, li {
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+li a:hover {
+    background-color: red;
+    color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+.yield-info {
+  background-color: white;
+  opacity: 0.8;
+  padding: 10px;
+  margin: 20px 10px;
+  border-bottom: 2px, solid;
+  border: 1px solid red;
+}
+.header {
+  background-color: white;
+  opacity: 0.8;
+  margin: 20px 10px;
+}

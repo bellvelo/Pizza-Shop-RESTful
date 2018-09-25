@@ -1,0 +1,20 @@
+<form method="post" action="/pizza_orders"> <!--when we hit submit, it will send a post request to this route, ensure the action matches that on controller-->
+  <label for="first-name">First Name:</label>
+  <input id ="first-name" type="text" name="first_name"/>
+  <!-- name: these should match the fields on the hash -->
+  <!-- for and id should be the same -->
+
+  <label for="last-name">Last Name:</label>
+  <input id ="last-name" type="text" name="last_name"/>
+
+  <label for="pizza-select">Select a pizza</label>
+  <select id="pizza-select" name="topping"> <!--select is a drop down-->
+    <option value="Margherita">Margherita</option> <!-- options are the choices on the dropdown-->
+    <option value="Calzone">Calzone</option>
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" name="quantity"/>
+
+  <input type="submit" value="Order Pizza"/>
+</form>
